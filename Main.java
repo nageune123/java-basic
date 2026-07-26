@@ -1,18 +1,20 @@
 public class Main {
     public static void main(String[] args) {
-        String name = "Jun";
-        int age = 37;
-        double height = 170.5;
-        boolean student = true;
+        int a = 10;
+        int b = 3;
 
-        System.out.println("이름 : " + name);
-        System.out.println("나이 : " + age);
-        System.out.println("키 : " + height);
-        System.out.println("학생 여부 : " + student);
+        System.out.println("더하기 : " + (a + b));
+        System.out.println("빼기 : " + (a - b));
+        System.out.println("곱하기 : " + (a * b));
+        System.out.println("나누기 : " + (a / b));
+        System.out.println("나머지 : " + (a % b));
 
-        age = 38;
+        a++;
 
-        System.out.println("1년 후 나이 : " + age);
+        System.out.println("증가 : " + a);
 
+        a += 5;
+
+        System.out.println("복합 연산 : " + a);
     }
 }   
