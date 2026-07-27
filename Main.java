@@ -1,9 +1,22 @@
-public class Main {
-    public static void main(String[] args) {
-int[] arr = {2, 4, 6};
+class Car {
 
-for (int num : arr) {
-    System.out.println(num);
+    String color;
+    int speed;
+
 }
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Car car = new Car();
+
+        car.color = "파랑";
+        car.speed = 100;
+
+        System.out.println(car.color);
+        System.out.println(car.speed);
+
     }
-}   
+
+}
