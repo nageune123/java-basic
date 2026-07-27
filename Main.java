@@ -1,13 +1,20 @@
-class Person {
+class Animal {
 
-    private String name;
-
-    void setName(String name){
-        this.name = name;
+    void sound() {
+        System.out.println("동물");
     }
 
-    String getName(){
-        return name;
+}
+
+class Dog extends Animal {
+
+    @Override
+    void sound() {
+        System.out.println("멍멍");
+    }
+
+    void bark() {
+        System.out.println("왈왈");
     }
 
 }
@@ -16,12 +23,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Person p = new Person();
+        Animal a = new Dog();
 
-        p.setName("준");
-
-        System.out.println(p.getName());
+        a.sound();
 
     }
-
 }
