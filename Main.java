@@ -1,13 +1,13 @@
-class Dog {
+class Person {
 
-    String name;
+    private String name;
 
-    Dog(String n) {
-        name = n;
+    void setName(String name){
+        this.name = name;
     }
 
-    void bark() {
-        System.out.println(name + " : 멍멍!");
+    String getName(){
+        return name;
     }
 
 }
@@ -16,9 +16,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Dog dog = new Dog("바둑이");
+        Person p = new Person();
 
-        dog.bark();
+        p.setName("준");
+
+        System.out.println(p.getName());
 
     }
 
