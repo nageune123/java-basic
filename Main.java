@@ -1,7 +1,14 @@
-class Car {
+class Dog {
 
-    String color;
-    int speed;
+    String name;
+
+    Dog(String n) {
+        name = n;
+    }
+
+    void bark() {
+        System.out.println(name + " : 멍멍!");
+    }
 
 }
 
@@ -9,13 +16,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Car car = new Car();
+        Dog dog = new Dog("바둑이");
 
-        car.color = "파랑";
-        car.speed = 100;
-
-        System.out.println(car.color);
-        System.out.println(car.speed);
+        dog.bark();
 
     }
 
